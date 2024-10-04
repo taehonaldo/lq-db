@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `lq` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `lq`;
 -- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: lq
@@ -30,7 +28,7 @@ CREATE TABLE `histories` (
   `qid` int NOT NULL,
   `datetime` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=197 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=198 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,7 +90,7 @@ CREATE TABLE `quests` (
   UNIQUE KEY `id_UNIQUE` (`qid`),
   KEY `type_idx` (`type`),
   KEY `uid_idx` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +99,7 @@ CREATE TABLE `quests` (
 
 LOCK TABLES `quests` WRITE;
 /*!40000 ALTER TABLE `quests` DISABLE KEYS */;
-INSERT INTO `quests` VALUES (1,4,'유산소',NULL,'day','1725859448758','1727170839330',0,3,'UNDE',2),(2,4,'재활용',NULL,'week','1725859465918','1727228753440',0,1,'UNDE',1),(3,4,'근력',NULL,'day','1725860979740','1726202287652',0,2,'UNDE',0),(4,4,'월세 납부',NULL,'month','1725861726054','1726806763006',0,1,'UNDE',1),(5,4,'관리비 납부',NULL,'month','1725861732589','1727228738247',0,1,'UNDE',1),(6,4,'가스비 납부',NULL,'month','1725861735860',NULL,0,0,'UNDE',0),(7,4,'가족회비 납부',NULL,'month','1725861741300','1726202372064',0,1,'UNDE',1),(8,4,'결혼자금 저축',NULL,'month','1725861750339','1726202311372',0,1,'UNDE',1),(9,4,'연말정산',NULL,'year','1725861764632',NULL,0,0,'UNDE',0),(10,5,'일간 테스트 1',NULL,'day','1725862128538','1725862129174',0,0,'UNDE',0),(11,4,'개발',NULL,'day','1725862233241','1727048670919',0,6,'UNDE',0),(12,4,'바닥 청소',NULL,'day','1725864124978','1727048670919',1,1,'UNDE',0),(13,4,'undefined',NULL,'day','1725864125771',NULL,1,0,'UNDE',0),(14,4,'3',NULL,'day','1725864128072',NULL,1,0,'UNDE',0),(15,4,'4',NULL,'day','1725864129766',NULL,1,0,'UNDE',0),(16,4,'5',NULL,'day','1725928417628',NULL,1,0,'UNDE',0),(17,4,'6',NULL,'day','1725928419306',NULL,1,0,'UNDE',0),(18,4,'7',NULL,'day','1725928426497',NULL,1,0,'UNDE',0),(19,4,'일찍 눕기',NULL,'day','1726016366107','1726202290016',0,1,'UNDE',0),(20,4,'5',NULL,'day','1726030300194',NULL,1,0,'UNDE',0),(21,4,'6',NULL,'day','1726030353307',NULL,1,0,'UNDE',0),(22,4,'7',NULL,'day','1726030444914',NULL,1,0,'UNDE',0),(23,4,'8',NULL,'day','1726030447290',NULL,1,0,'UNDE',0),(24,4,'일간 퀘스트 생성 테스트','aㅁㅁㅁ','day','1726709357595',NULL,1,0,'UNDE',0),(25,4,'연간 퀘스트 생성 테스트','연간 1','year','1726709495922',NULL,1,0,'UNDE',0),(26,4,'wsdqaswdas','daASD','day','1726717255822',NULL,1,0,'UNDE',0),(27,4,'11','222','week','1726720187975',NULL,1,0,'UNDE',0),(28,4,'주간 테스트','주간 테스트 설명','week','1726720273855',NULL,1,0,'UNDE',0),(29,4,'2','2','week','1726720770187',NULL,1,0,'UNDE',0),(30,4,'11','1','day','1726721839370',NULL,1,0,'UNDE',0),(31,4,'11','1','day','1726721840557',NULL,1,0,'UNDE',0),(32,4,'1',NULL,'month','1726730349930',NULL,1,0,'UNDE',0),(33,4,'11','11','day','1726731752801',NULL,1,0,'UNDE',0),(34,4,'11','11','day','1726731782587',NULL,1,0,'UNDE',0),(35,4,'111','222','week','1726733169465',NULL,1,0,'UNDE',0),(36,4,'11','11','day','1726733425575',NULL,1,0,'UNDE',0),(37,4,'iiii',NULL,'week','1726805625668',NULL,1,0,'UNDE',0),(38,4,'iii',NULL,'month','1726805654386',NULL,1,0,'UNDE',0),(39,4,'1','1','year','1726811126675',NULL,1,0,'UNDE',0),(40,4,'1','1','year','1726812017852',NULL,1,0,'UNDE',0),(41,4,'1','2','week','1726812085724',NULL,1,0,'UNDE',0),(42,4,'11','22','month','1726812654231',NULL,1,0,'UNDE',0),(43,4,'aaa','aa','day','1726812864000',NULL,1,0,'DIET',0),(44,4,'책읽기','','month','1726813042096',NULL,0,0,'UNDE',0),(45,4,'할거1','','week','1726814584550','1726814710895',1,1,'FINA',0),(46,4,';./.',',ㅡㅡ','day','1726814695570','1726814705682',1,1,'DIET',0),(47,4,'ㅁ','ㅁㅁㅁ','day','1726815797360',NULL,1,0,'FINA',0),(48,4,'20자 테스트20자 테스트20자 테스','ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ','day','1727066306507',NULL,1,0,'UNDE',0),(49,4,'1','12','day','1727143981908',NULL,1,0,'FINA',0),(50,4,'2','3','day','1727144030547',NULL,1,0,'DIET',0),(51,4,'213','214124','month','1727144530322',NULL,1,0,'FINA',0),(52,4,'3123','123213','day','1727148942332',NULL,1,0,'FINA',0),(53,4,'1234','4567','day','1727149808597',NULL,1,0,'WORK',0),(54,4,'123','4356','week','1727167931296',NULL,1,0,'UNDE',0),(55,4,'55','555','month','1727168004049',NULL,1,0,'UNDE',0),(56,4,'333','444','month','1727168068829',NULL,1,0,'FINA',0),(57,4,'555','666','year','1727168101928',NULL,1,0,'FINA',0),(58,4,'555','','year','1727168111776',NULL,1,0,'UNDE',0),(59,4,'1313','11313','day','1727168462969',NULL,1,0,'UNDE',0),(60,4,'5656','6767','day','1727168501319',NULL,1,0,'UNDE',0),(61,4,'1515','5656','day','1727168790581',NULL,1,0,'UNDE',0),(62,4,'454545','565656','day','1727168828554',NULL,1,0,'UNDE',0),(63,4,'1212','3434','day','1727168854849',NULL,1,0,'UNDE',0),(64,4,'바닥 청소','','week','1727223125752',NULL,0,0,'UNDE',0),(65,4,'123','','day','1727223267421',NULL,1,0,'LIFE',0),(66,4,'123','','day','1727100001776','1727100001776',0,1,'UNDE',0),(67,4,'기념일(12.24)','용은이랑 사귄날','year','1727228536931',NULL,0,0,'RELA',0),(68,4,'결혼기념일(10.25)','삼성역 그랜드힐컨벤션\n2층','year','1727228549511',NULL,0,0,'RELA',0),(69,4,'용은 생일(7.29)','','year','1727228565774',NULL,0,0,'RELA',0),(70,4,'아빠 생일(7.29)','','year','1727228706154',NULL,0,0,'RELA',0),(71,4,'엄마 생일(3.17)','','year','1727228718203',NULL,0,0,'RELA',0);
+INSERT INTO `quests` VALUES (1,4,'유산소',NULL,'day','1725859448758','1727170839330',0,3,'UNDE',2),(2,4,'재활용',NULL,'week','1725859465918','1727228753440',0,1,'UNDE',1),(3,4,'근력',NULL,'day','1725860979740','1726202287652',0,2,'UNDE',0),(4,4,'월세 납부',NULL,'month','1725861726054','1726806763006',0,1,'UNDE',1),(5,4,'관리비 납부',NULL,'month','1725861732589','1727228738247',0,1,'UNDE',1),(6,4,'가스비 납부',NULL,'month','1725861735860',NULL,0,0,'UNDE',0),(7,4,'가족회비 납부',NULL,'month','1725861741300','1726202372064',0,1,'UNDE',1),(8,4,'결혼자금 저축',NULL,'month','1725861750339','1726202311372',0,1,'UNDE',1),(9,4,'연말정산',NULL,'year','1725861764632',NULL,0,0,'UNDE',0),(10,5,'일간 테스트 1',NULL,'day','1725862128538','1725862129174',0,0,'UNDE',0),(11,4,'개발',NULL,'day','1725862233241','1727048670919',0,6,'UNDE',0),(12,4,'바닥 청소',NULL,'day','1725864124978','1727048670919',1,1,'UNDE',0),(13,4,'undefined',NULL,'day','1725864125771',NULL,1,0,'UNDE',0),(14,4,'3',NULL,'day','1725864128072',NULL,1,0,'UNDE',0),(15,4,'4',NULL,'day','1725864129766',NULL,1,0,'UNDE',0),(16,4,'5',NULL,'day','1725928417628',NULL,1,0,'UNDE',0),(17,4,'6',NULL,'day','1725928419306',NULL,1,0,'UNDE',0),(18,4,'7',NULL,'day','1725928426497',NULL,1,0,'UNDE',0),(19,4,'일찍 눕기',NULL,'day','1726016366107','1726202290016',0,1,'UNDE',0),(20,4,'5',NULL,'day','1726030300194',NULL,1,0,'UNDE',0),(21,4,'6',NULL,'day','1726030353307',NULL,1,0,'UNDE',0),(22,4,'7',NULL,'day','1726030444914',NULL,1,0,'UNDE',0),(23,4,'8',NULL,'day','1726030447290',NULL,1,0,'UNDE',0),(24,4,'일간 퀘스트 생성 테스트','aㅁㅁㅁ','day','1726709357595',NULL,1,0,'UNDE',0),(25,4,'연간 퀘스트 생성 테스트','연간 1','year','1726709495922',NULL,1,0,'UNDE',0),(26,4,'wsdqaswdas','daASD','day','1726717255822',NULL,1,0,'UNDE',0),(27,4,'11','222','week','1726720187975',NULL,1,0,'UNDE',0),(28,4,'주간 테스트','주간 테스트 설명','week','1726720273855',NULL,1,0,'UNDE',0),(29,4,'2','2','week','1726720770187',NULL,1,0,'UNDE',0),(30,4,'11','1','day','1726721839370',NULL,1,0,'UNDE',0),(31,4,'11','1','day','1726721840557',NULL,1,0,'UNDE',0),(32,4,'1',NULL,'month','1726730349930',NULL,1,0,'UNDE',0),(33,4,'11','11','day','1726731752801',NULL,1,0,'UNDE',0),(34,4,'11','11','day','1726731782587',NULL,1,0,'UNDE',0),(35,4,'111','222','week','1726733169465',NULL,1,0,'UNDE',0),(36,4,'11','11','day','1726733425575',NULL,1,0,'UNDE',0),(37,4,'iiii',NULL,'week','1726805625668',NULL,1,0,'UNDE',0),(38,4,'iii',NULL,'month','1726805654386',NULL,1,0,'UNDE',0),(39,4,'1','1','year','1726811126675',NULL,1,0,'UNDE',0),(40,4,'1','1','year','1726812017852',NULL,1,0,'UNDE',0),(41,4,'1','2','week','1726812085724',NULL,1,0,'UNDE',0),(42,4,'11','22','month','1726812654231',NULL,1,0,'UNDE',0),(43,4,'aaa','aa','day','1726812864000',NULL,1,0,'DIET',0),(44,4,'책읽기','','month','1726813042096',NULL,0,0,'UNDE',0),(45,4,'할거1','','week','1726814584550','1726814710895',1,1,'FINA',0),(46,4,';./.',',ㅡㅡ','day','1726814695570','1726814705682',1,1,'DIET',0),(47,4,'ㅁ','ㅁㅁㅁ','day','1726815797360',NULL,1,0,'FINA',0),(48,4,'20자 테스트20자 테스트20자 테스','ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ','day','1727066306507',NULL,1,0,'UNDE',0),(49,4,'1','12','day','1727143981908',NULL,1,0,'FINA',0),(50,4,'2','3','day','1727144030547',NULL,1,0,'DIET',0),(51,4,'213','214124','month','1727144530322',NULL,1,0,'FINA',0),(52,4,'3123','123213','day','1727148942332',NULL,1,0,'FINA',0),(53,4,'1234','4567','day','1727149808597',NULL,1,0,'WORK',0),(54,4,'123','4356','week','1727167931296',NULL,1,0,'UNDE',0),(55,4,'55','555','month','1727168004049',NULL,1,0,'UNDE',0),(56,4,'333','444','month','1727168068829',NULL,1,0,'FINA',0),(57,4,'555','666','year','1727168101928',NULL,1,0,'FINA',0),(58,4,'555','','year','1727168111776',NULL,1,0,'UNDE',0),(59,4,'1313','11313','day','1727168462969',NULL,1,0,'UNDE',0),(60,4,'5656','6767','day','1727168501319',NULL,1,0,'UNDE',0),(61,4,'1515','5656','day','1727168790581',NULL,1,0,'UNDE',0),(62,4,'454545','565656','day','1727168828554',NULL,1,0,'UNDE',0),(63,4,'1212','3434','day','1727168854849',NULL,1,0,'UNDE',0),(64,4,'바닥 청소','','week','1727223125752',NULL,0,0,'UNDE',0),(65,4,'123','','day','1727223267421',NULL,1,0,'LIFE',0),(66,4,'123','','day','1727100001776','1727100001776',0,1,'UNDE',0),(67,4,'기념일(12.24)','용은이랑 사귄날','year','1727228536931',NULL,0,0,'RELA',0),(68,4,'결혼기념일(10.25)','삼성역 그랜드힐컨벤션\n2층','year','1727228549511',NULL,0,0,'RELA',0),(69,4,'용은 생일(7.29)','','year','1727228565774',NULL,0,0,'RELA',0),(70,4,'아빠 생일(7.29)','','year','1727228706154',NULL,0,0,'RELA',0),(71,4,'엄마 생일(3.17)','','year','1727228718203',NULL,0,0,'RELA',0),(72,17,'asd','','day','1728021652568',NULL,0,0,'UNDE',0);
 /*!40000 ALTER TABLE `quests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,14 +114,12 @@ CREATE TABLE `users` (
   `uid` int NOT NULL AUTO_INCREMENT,
   `id` varchar(45) NOT NULL,
   `name` varchar(45) NOT NULL,
-  `picture` varchar(256) DEFAULT NULL,
   `createdDatetime` varchar(45) NOT NULL,
-  `accessToken` varchar(256) DEFAULT NULL,
-  `refreshToken` varchar(256) DEFAULT NULL,
+  `password` varchar(128) NOT NULL,
   PRIMARY KEY (`uid`,`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   UNIQUE KEY `uid_UNIQUE` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -132,7 +128,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (4,'domybestatleastonceaweek@gmail.com','Taeho Kim','https://lh3.googleusercontent.com/a/ACg8ocJ3KTL56xFeATbgUxknaj8d5aOlGPxvQSn3Kd1OI8T1TEOKTA=s96-c','1725858182187',NULL,NULL),(5,'taeho.innodep@gmail.com','Taeho Kim','https://lh3.googleusercontent.com/a/ACg8ocI3ZQ0M_VhcIs7J0CILUi3w7nfN91SQ2JTk2-g6_ZuNK9-kMA=s96-c','1725861968824',NULL,NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -145,4 +140,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-26 14:52:27
+-- Dump completed on 2024-10-04 15:12:24
